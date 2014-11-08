@@ -82,18 +82,20 @@ li{
   text-align:center;
 }
 .section_title:hover{
+  text-shadow:2px 2px black;
   color:#6F8291;
   -webkit-transform:scale(1.2);
   transform:scale(1.2);
 }
 h4 {
-    color:#1D2022;
-         -webkit-transition: all 0.7s ease;
+  color:#1D2022;
+  -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
   text-align: center;
 }
 h4:hover{
-    color:#6F8291;
+  color:#6F8291;
+  text-shadow:2px 2px black;
   -webkit-transform:scale(1.2);
   transform:scale(1.2);
 }
