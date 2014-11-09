@@ -1,8 +1,50 @@
-
-
 @import url(http://fonts.googleapis.com/css?family=Righteous|Marvel);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 html { 
-  background: url("http://i.dailymail.co.uk/i/pix/2014/11/07/1415370837687_wps_33_Pictured_Jokulsarlon_Lago.jpg") no-repeat center center fixed; 
+  background: url("http://i.imgur.com/tsB2T9P.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -11,11 +53,13 @@ html {
 }
 
 #title{
+  magin: 100px 50px 150px 50px;
+  padding-bottom:150px;
   font-size :200px;
   text-align : center;
   font-family: 'Righteous', cursive;
   color : black; 
-  opacity: 0.5;
+  opacity: 0.3;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
   text-shadow:2px 2px;
@@ -26,17 +70,12 @@ html {
   transform:scale(1.2);
   color:#909090;
   text-shadow:2px 2px black;
-  -webkit-filter: blur(5px);
 }
 
-li{
-  display: inline-block;
-  border-style:solid;
-  list-style-position:inside;
-  list-style-type: none;
-}
 
 #sub_heading {
+  color:#303030;
+  padding-bottom: 50px;
   text-align :center;
   font-family: 'Marvel', sans-serif;
   opacity: 0.8;
@@ -45,7 +84,7 @@ li{
   transition: all 0.7s ease;
 }
 #sub_heading:hover {
-    text-align :center;
+  text-align :center;
   font-family: 'Marvel', sans-serif;
   opacity: 0.8;
   font-size : 50px;
@@ -53,7 +92,26 @@ li{
   transform:scale(1.2);
 
 }
+#main_nav > li{
+  vertical-align: text-top;
+  padding-left: 120px;
+  padding-bottom:20px;
+  display: inline-block;
+  list-style-position:inside;
+  list-style-type: none;
+}
+li a:visited {
+  color:#808080;
+  
+}
+
+li ul{
+  display:visible;
+}
+
 .active {
+  vertical-align: text-top;
+  display:block;
   text-align: center;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
@@ -62,7 +120,16 @@ li{
   -webkit-transform:scale(1.2);
   transform:scale(1.2);
 }
+.nav_item{
+  vertical-align: text-top;
+  display:inline-block;
+  /*-webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  */text-align: center;
+}
 #sub_nav{
+  padding-bottom:50px; 
+  display:inline-block;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
   text-align: center;
@@ -71,24 +138,27 @@ li{
   -webkit-transform:scale(1.2);
   transform:scale(1.2);
 }
-.nav_item{
-  display:inline-block;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  text-align: center;
-}
 .hide{
-  display: none;
+  font-size:10px;
+  display:inline-block;
+  display:none;
 }
-.hide:hover{
-  display:visible;
+div.hidden .hide{
+  position:relative;
 }
+#sub_nav:hover .hide{
+  display:block;
+  }
 .nav_item:hover{
   -webkit-transform:scale(1.2);
   transform:scale(1.2);
 }
 
 .section_title{
+  border-style: solid;
+  border-color:white;
+  margin-bottom:20px;
+  font-size:25px;
   opacity: 0.7;
   color:#1D2022;
   -webkit-transition: all 0.7s ease;
@@ -102,6 +172,7 @@ li{
   transform:scale(1.2);
 }
 h4 {
+  margin-bottom:25px;
   color:#1D2022;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
@@ -114,6 +185,7 @@ h4:hover{
   transform:scale(1.2);
 }
 p{
+  margin-bottom:20px;
   text-align: center;
 }
 p:hover{
@@ -122,6 +194,10 @@ p:hover{
 }
 
 span {
+  display:block;
+  margin-top:50px;
+  border-top:50px;
+  padding-bottom:50px; 
   text-align:center;
   opacity: 0.6;
 }
