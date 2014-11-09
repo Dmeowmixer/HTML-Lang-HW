@@ -1,4 +1,18 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}
 @import url(http://fonts.googleapis.com/css?family=Righteous|Marvel);
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -13,191 +27,202 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+  margin:  0;
+  padding:  0;
+  border:  0;
+  font-size:  100%;
+  font:  inherit;
+  vertical-align:  baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-  display: block;
+  display:  block;
 }
 body {
-  line-height: 1;
+  line-height:  1;
 }
 ol, ul {
-  list-style: none;
+  list-style:  none;
 }
 blockquote, q {
-  quotes: none;
+  quotes:  none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
+blockquote: before, blockquote: after,
+q: before, q: after {
+  content:  '';
+  content:  none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  border-collapse:  collapse;
+  border-spacing:  0;
 }
 html { 
-  background: url("http://i.imgur.com/tsB2T9P.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
+  background:  url("http://i.imgur.com/tsB2T9P.jpg") no-repeat center center fixed; 
+  -webkit-background-size:  cover;
+  -moz-background-size:  cover;
+  -o-background-size:  cover;
+  background-size:  cover;
+  background-attachment:  fixed;
 }
-
+body{
+  padding:50px;
+}
 #title{
-  magin: 100px 50px 150px 50px;
-  padding-bottom:150px;
-  font-size :200px;
-  text-align : center;
-  font-family: 'Righteous', cursive;
-  color : black; 
-  opacity: 0.3;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  text-shadow:2px 2px;
+  magin:  100px 50px 150px 50px;
+  padding-bottom: 150px;
+  font-size : 200px;
+  text-align :  center;
+  font-family:  'Righteous', cursive;
+  color :  black; 
+  opacity:  0.3;
+  -webkit-transition:  all 0.7s ease;
+  transition:  all 0.7s ease;
+  text-shadow: 2px 2px;
 }
 
 #title:hover {
-  -webkit-transform:scale(1.2);
-  transform:scale(1.2);
-  color:#909090;
-  text-shadow:2px 2px black;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  color: #909090;
+  text-shadow: 2px 2px black;
 }
 
 
 #sub_heading {
-  color:#303030;
-  padding-bottom: 50px;
-  text-align :center;
-  font-family: 'Marvel', sans-serif;
-  opacity: 0.8;
-  font-size : 50px;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
+  color: white;
+  padding-bottom:  50px;
+  text-align : center;
+  font-family:  'Marvel', sans-serif;
+  opacity:  0.8;
+  font-size :  50px;
+  -webkit-transition:  all 0.7s ease;
+  transition:  all 0.7s ease;
 }
 #sub_heading:hover {
-  text-align :center;
-  font-family: 'Marvel', sans-serif;
-  opacity: 0.8;
-  font-size : 50px;
-  -webkit-transform:scale(1.2);
-  transform:scale(1.2);
+  text-align : center;
+  font-family:  'Marvel', sans-serif;
+  opacity:  0.8;
+  font-size :  50px;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 
 }
 #main_nav > li{
-  vertical-align: text-top;
-  padding-left: 120px;
-  padding-bottom:20px;
-  display: inline-block;
-  list-style-position:inside;
-  list-style-type: none;
+  vertical-align:  text-top;
+  padding-left:  120px;
+  padding-bottom: 20px;
+  display:  inline-block;
+  list-style-position: inside;
+  list-style-type:  none;
 }
-li a:visited {
-  color:#808080;
+li a: visited {
+  color: #808080;
   
 }
 
 li ul{
-  display:visible;
+  display: visible;
 }
 
 .active {
-  vertical-align: text-top;
-  display:block;
-  text-align: center;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
+  vertical-align:  text-top;
+  display: block;
+  text-align:  center;
+  -webkit-transition:  all 0.7s ease;
+  transition:  all 0.7s ease;
 }
 .active:hover{
-  -webkit-transform:scale(1.2);
-  transform:scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .nav_item{
-  vertical-align: text-top;
-  display:inline-block;
-  /*-webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  */text-align: center;
+  vertical-align:  text-top;
+  display: inline-block;
+  /*-webkit-transition:  all 0.7s ease;
+  transition:  all 0.7s ease;
+  */text-align:  center;
 }
 #sub_nav{
-  padding-bottom:50px; 
-  display:inline-block;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  text-align: center;
+  padding-bottom: 50px; 
+  display: inline-block;
+  -webkit-transition:  all 0.7s ease;
+  transition:  all 0.7s ease;
+  text-align:  center;
 }
 #sub_nav:hover{
-  -webkit-transform:scale(1.2);
-  transform:scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .hide{
-  font-size:10px;
-  display:inline-block;
-  display:none;
+  font-size: 10px;
+  display: inline-block;
+  display: none;
 }
 div.hidden .hide{
-  position:relative;
+  position: relative;
 }
 #sub_nav:hover .hide{
-  display:block;
+  display: block;
   }
 .nav_item:hover{
-  -webkit-transform:scale(1.2);
-  transform:scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .section_title{
-  border-style: solid;
-  border-color:white;
-  margin-bottom:20px;
-  font-size:25px;
-  opacity: 0.7;
-  color:#1D2022;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  text-align:center;
+  float:left;
+  font-size: 25px;
+  opacity:  0.7;
+  color: #1D2022;
+  -webkit-transition:  all 0.7s ease;
+  transition:  all 0.7s ease;
+  text-align: center;
 }
 .section_title:hover{
-  text-shadow:2px 2px black;
-  color:#6F8291;
-  -webkit-transform:scale(1.2);
-  transform:scale(1.2);
+  text-shadow: 2px 2px black;
+  color: #6F8291;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 h4 {
-  margin-bottom:25px;
-  color:#1D2022;
+  float:right;
+  color: #1D2022;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
   text-align: center;
 }
 h4:hover{
-  color:#6F8291;
-  text-shadow:2px 2px black;
-  -webkit-transform:scale(1.2);
-  transform:scale(1.2);
+  color: #6F8291;
+  text-shadow: 2px 2px black;
+  -webkit-transform: scale(1.2);
+  transform:  scale(1.2);
 }
 p{
-  margin-bottom:20px;
+  margin-bottom: 20px;
   text-align: center;
+    color: white;
+  text-shadow:  2px 2px black;
 }
-p:hover{
-  color:white;
-  text-shadow:2px 2px black;
+/*p:hover{
+  color: white;
+  text-shadow:  2px 2px black;
+}*/
+div.clearfix section#main_content,div.clearfix section p{
+  float:left;
+  width:80%;
 }
-
+div.clearfix .side_title{
+  float:right;
+  width:20%;
+}
 span {
-  display:block;
-  margin-top:50px;
-  border-top:50px;
-  padding-bottom:50px; 
-  text-align:center;
+  display: block;
+  margin-top: 50px;
+  border-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
   opacity: 0.6;
 }
